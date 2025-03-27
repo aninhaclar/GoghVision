@@ -1,88 +1,55 @@
 body {
-    background: url('Login.jpg') no-repeat center center/cover;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #0a0c27; /* Cor de fundo escura */
+    overflow: hidden; /* Esconde barras de rolagem */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    color: white;
+    min-height: 100vh;
+}
+
+.starry-night {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Login.jpg'); /* Substitua pela sua imagem */
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
 }
 
 .container {
-    background: rgba(140, 140, 0, 0.3);
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    width: 400px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.title {
-    background: linear-gradient(to right, blue, darkblue);
-    padding: 15px;
-    font-size: 24px;
-    border-radius: 10px;
-    font-weight: bold;
-}
-
-.input-group {
-    margin: 15px 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    background: rgba(255, 0, 0, 0.1);
-    padding: 12px;
-    border-radius: 25px;
-    border: 2px solid;
 }
 
-.input-group:nth-child(2), .input-group:nth-child(5) {
-    border-color: cyan;
+.logo {
+    margin-bottom: 30px;
 }
 
-.input-group:nth-child(3), .input-group:nth-child(4) {
-    border-color: yellow;
+.logo img {
+    max-width: 400px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto;
+    display: block;
 }
 
-.input-group input {
-    border: none;
-    outline: none;
-    background: transparent;
-    flex: 1;
-    padding: 8px;
+.login-button {
+    background-color: #00fbff43;
     color: white;
-    font-size: 16px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px; 
-    margin-top: 20px;
-}
-
-.buttons button {
-    padding: 10px 15px; 
+    padding: 15px 60px;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px; 
+    font-size: 1.5em;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    width: auto;
-    min-width: 50px; 
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold; 
 }
 
-.forgot {
-    background: rgb(0, 23, 228);
-    color: black;
-}
-
-.register {
-    background: rgb(255, 153, 0);
-    color: black;
-}
-
-.Entrar {
-    background: rgb(255, 247, 0);
-    color: black;
+.login-button:hover {
+    background-color: #3333FF; /* Um tom de azul mais claro no hover */
 }

@@ -1,33 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - Gogh Vision</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <div class="login-container">
-        <img src="logo.png" alt="Gogh Vision Logo" class="logo">
-    </div>
     <div class="container">
-        <div class="title">Register</div>
-        <div class="input-group">
-            <input type="text" placeholder="Username">
+        <div class="register-box">
+            <div class="header">
+                Register
+            </div>
+            <form id="registerForm">
+                <div class="input-group">
+                    <label>Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label>premium</label>
+                    <input type="premium" id="premium" required>
+                </div>
+                <div class="input-group">
+                    <label> Senha de Recuperacao</label>
+                    <input type="senhaRecuperacao" id="senhaRecuperacao" required>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="input-group">
+                    <label>Confirm Password</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <div class="buttons">
+                    <button class="E" onclick="window.location.href='login.html'">Back Login</button>
+                    <button type="submit" class="register-btn">Register</button>
+                </div>
+            </form>
         </div>
-        <div class="input-group">
-            <input type="email" placeholder="Email">
-        </div>
-        <div class="input-group">
-            <input type="password" placeholder="Password">
-        </div>
-        <div class="input-group">
-            <input type="password" placeholder="Confirm Password">
-        </div>
-        <div class="buttons">
-            <button onclick="window.location.href='index.html'" class="back">Back Login</button>
-          
-        </div>
+       
     </div>
+    <script src="register.js"></script>
 </body>
 </html>
+

@@ -63,7 +63,7 @@ body {
 }
 
 .back-btn {
-    background: white;
+    background: rgb(245, 148, 2);
     color: red;
     border: none;
     padding: 10px;
@@ -88,3 +88,29 @@ body {
 .enviar-codigo-btn:hover {
     background: darkblue;
 }
+
+
+.enviar-codigo-btn:hover {
+    background: darkblue;
+}
+
+.back-login-btn {
+    background: rgba(255, 255, 255, 0.249);
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.back-login-btn:hover {
+    background: rgba(255, 255, 255, 0.249);
+}
+
+
+.back-login-btn:hover {
+    background: rgba(255, 255, 255, 0.249);

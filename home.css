@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0000ff, #3d3dff);
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.stories {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.story img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid green;
+}
+
+.feed {
+    width: 50%;
+}
+
+.post {
+    background: #1c1c7a;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-details h4 {
+    display: flex;
+    align-items: center;
+}
+
+.verified {
+    color: lightblue;
+    margin-left: 5px;
+}
+
+.post-img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.comment-section {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.comment-section input {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.comment-section button {
+    background: lightblue;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.sidebar {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 25px;
+}

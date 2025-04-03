@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (response.ok) {
                 alert("Código enviado com sucesso!");
-                window.location.href = "index.html"; // Redireciona após o alerta
+                window.location.href = "index.html"; 
             } else {
                 alert(`Erro: ${data.message}`);
             }

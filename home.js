@@ -1,11 +1,7 @@
-function comment(postId) {
-    let inputField = document.getElementById(`commentInput${postId}`);
-    let commentText = inputField.value.trim();
+function openModal() {
+    document.getElementById("commentModal").style.display = "flex";
+}
 
-    if (commentText) {
-        alert(`Comentário adicionado: ${commentText}`);
-        inputField.value = "";
-    } else {
-        alert("Digite um comentário antes de enviar!");
-    }
+function closeModal() {
+    document.getElementById("commentModal").style.display = "none";
 }

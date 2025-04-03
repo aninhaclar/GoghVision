@@ -1,0 +1,73 @@
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #6ba6ff, #3b668d);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.buttons button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.highlights {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.highlight {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight.add {
+    background: black;
+    color: white;
+    font-size: 20px;
+}
+
+.posts {
+    display: flex;
+    margin-top: 20px;
+}
+
+.post {
+    flex: 1;
+    height: 100px;
+    margin: 5px;
+}
